@@ -1,0 +1,36 @@
+    1  apt install vim
+    2  apt update
+    3  apt install vim
+    4  cd /opt/
+    5  ls
+    6  mkdir week1
+    7  cd week1/
+    8  vim ex1.sh
+    9  exit
+   10  cd /opt/week1/
+   11  vim ex1.sh 
+   12  sh ex1.sh 
+   13  history
+   14  vim ex1.sh 
+   15  sh ex1.sh 
+   16  ls
+   17  vim ex1.txt 
+   18  vim ex2.sh
+   19  sh ex2.sh
+   20  vim ex2.sh
+   21  sh ex2.sh
+   22  vim ex2.sh
+   23  sh ex2.sh
+   24  vim ex2.txt 
+   25  vim ex2.sh
+   26  sh ex2.sh
+   27  vim ex2.sh
+   28  sh ex2.sh
+   29  vim ex2.sh
+   30  sh ex2.sh
+   31  vim ex2.sh
+   32  sh ex2.sh
+   33  vim ex2.sh
+   34  sh ex2.sh
+   35  vim ex2.sh
+   36  history > ex2.txt
