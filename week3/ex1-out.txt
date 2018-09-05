@@ -1,0 +1,11 @@
+Address of c:-397101236
+Value of c:22
+
+Address of pointer pc:-397101236
+Content of pointer pc:22
+
+Address of pointer pc:-397101236
+Content of pointer pc:11
+
+Address of c:-397101236
+Value of c:2
