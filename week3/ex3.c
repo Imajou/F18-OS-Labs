@@ -7,11 +7,11 @@ struct Node {
 };
 typedef struct Node Node;
 
-struct List {
+struct List_Int {
     int size;
     Node *head;
-};
-typedef struct List List;
+}List_Int_Default  = {0, NULL};
+typedef struct List_Int List;
 
 
 int insert_node(List *list, long value, int index) {
@@ -86,8 +86,7 @@ long *print_list(List *list) {
 }
 
 int main() {
-    List *list = malloc(sizeof(List));
-    list->head = NULL;
+    List *list = &List_Int_Default;
     insert_node(list, 1, 0);
     insert_node(list, 2, 0);
     insert_node(list, 3, 0);
