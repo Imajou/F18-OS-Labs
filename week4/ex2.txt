@@ -1,0 +1,41 @@
+
+Each fork() copies full state of the program including loop variables and current call in loop, then continues execution of a program and recursively calls another forks. Total number of processes is 2^n where n is loop counter.
+ 
+|--= 10466 imajou /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService
+ |-+= 10701 imajou /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+ | \-+= 10702 root login -pf imajou /bin/zsh
+ |   \-+= 10703 imajou -zsh
+ |     |-+= 19408 imajou ./ex2
+ |     | |-+- 19410 imajou ./ex2
+ |     | | |-+- 19413 imajou ./ex2
+ |     | | | |-+- 19420 imajou ./ex2
+ |     | | | | |-+- 19430 imajou ./ex2
+ |     | | | | | \--- 19441 imajou ./ex2
+ |     | | | | \--- 19438 imajou ./ex2
+ |     | | | |-+- 19426 imajou ./ex2
+ |     | | | | \--- 19439 imajou ./ex2
+ |     | | | \--- 19434 imajou ./ex2
+ |     | | |-+- 19418 imajou ./ex2
+ |     | | | |-+- 19427 imajou ./ex2
+ |     | | | | \--- 19440 imajou ./ex2
+ |     | | | \--- 19435 imajou ./ex2
+ |     | | |-+- 19423 imajou ./ex2
+ |     | | | \--- 19436 imajou ./ex2
+ |     | | \--- 19431 imajou ./ex2
+ |     | |-+- 19412 imajou ./ex2
+ |     | | |-+- 19416 imajou ./ex2
+ |     | | | |-+- 19424 imajou ./ex2
+ |     | | | | \--- 19437 imajou ./ex2
+ |     | | | \--- 19433 imajou ./ex2
+ |     | | |-+- 19422 imajou ./ex2
+ |     | | | \--- 19432 imajou ./ex2
+ |     | | \--- 19428 imajou ./ex2
+ |     | |-+- 19414 imajou ./ex2
+ |     | | |-+- 19419 imajou ./ex2
+ |     | | | \--- 19429 imajou ./ex2
+ |     | | \--- 19425 imajou ./ex2
+ |     | |-+- 19415 imajou ./ex2
+ |     | | \--- 19421 imajou ./ex2
+ |     | \--- 19417 imajou ./ex2
+ |     \-+= 19492 imajou pstree
+ |       \--- 19493 root ps -axwwo user,pid,ppid,pgid,command
