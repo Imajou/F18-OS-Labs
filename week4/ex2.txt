@@ -1,4 +1,3 @@
-
 Each fork() copies full state of the program including loop variables and current call in loop, then continues execution of a program and recursively calls another forks. Total number of processes is 2^n where n is loop counter.
  
 |--= 10466 imajou /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService

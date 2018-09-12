@@ -1,6 +1,3 @@
-
-The creation order of the processes is defined by overall system state and thus undefined but incremental PIDs caused consecutive program running.
-
 Hello from parent - [14402 - 1]
 Hello from child - [14403 - 1]
 Hello from parent - [14404 - 2]
@@ -21,3 +18,5 @@ Hello from parent - [14418 - 9]
 Hello from child - [14419 - 9]
 Hello from parent - [14420 - 10]
 Hello from child - [14421 - 10]
+
+The output order is undefined (may vary of system properties) but incremental PIDs caused consecutive programm running.
