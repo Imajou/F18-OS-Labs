@@ -1,0 +1,7 @@
+# Some of week5 program
+__TEXT	__DATA	__OBJC	others	dec	hex
+4096	4096	0	4294971392	4294979584	100003000	
+
+# Some of week6 program
+__TEXT	__DATA	__OBJC	others	dec	hex
+4096	4096	0	4294971392	4294979584	100003000	
