@@ -2,6 +2,16 @@
 #include <malloc/malloc.h>
 #include <memory.h>
 
+#ifdef __APPLE__
+#define MALLOC_SIZE_FUN malloc_size
+#elif __linux__
+#define MALLOC_SIZE_FUN malloc_usable_size
+#elif __unix__
+#define MALLOC_SIZE_FUN malloc_usable_size
+#elif _WIN32
+#define MALLOC_SIZE_FUN _msize
+#endif
+
 void *custom_realloc(void *ptr, size_t size)
 {
 
@@ -15,17 +25,9 @@ void *custom_realloc(void *ptr, size_t size)
 
     void *new_ptr;
 
-    if (malloc_size(ptr) < size)
-    {
-        new_ptr = malloc(size);
-
-        memcpy(new_ptr, ptr, malloc_size(ptr));
-
-        free(ptr);
-    }
-    else
-    {
-        new_ptr = ptr;
-    }
+    new_ptr = malloc(size);
+    memcpy(new_ptr, ptr, MALLOC_SIZE_FUN(ptr));
+    
+    free(ptr);
     return new_ptr;
 }
