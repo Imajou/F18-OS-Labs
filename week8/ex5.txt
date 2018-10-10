@@ -1,0 +1,3 @@
+Physical address is an real and existing address in real and existing memory.
+Virtual address is an abstraction for a running programm to easily manage 
+address space of a programm. Each virual address corresponds to some physical address with some offset.
