@@ -1,0 +1,1 @@
+Upper 4 bits specify one of the 16 virtual pages and the lower 12 bits specify the byte offset (0 to 8191)
