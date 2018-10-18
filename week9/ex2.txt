@@ -1,0 +1,12 @@
+For 100% hit rate it is sufficient to have references ids set with cardinality not more than page frame,
+while accessing any order.
+Great increase can be achieved via consecutive increasing/decreasing id accessing,
+if cardinality is more than a page frame (rate decreases greater the cardinality is).
+In both cases we have all or some pages always in memory when constantly accessing only it.
+
+For low hit rate we may have ids set with cardinality more than page frame and access ids in inc/dec crossing manner,
+e. g. <1, 1000, 2, 999, 3, 998,...>.
+For this case we will rarely have any hit, only when sequences converge – <...500, 501, 501, 500,...>,
+if ids set cardinality is same order of page frame. If at least 2 times plus 1 more, we have 0% hit rate.
+
+Examples given in ex2-inc.txt and ex2-dec.txt
