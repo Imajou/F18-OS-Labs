@@ -1,0 +1,10 @@
+chmod -x _ex3.txt >> ex3.txt
+-rw-r--r--  1 imajou  staff  0 Oct 25 23:04 _ex3.txt
+chmod uo=rwx _ex3.txt >> ex3.txt
+-rwxr--rwx  1 imajou  staff  0 Oct 25 23:04 _ex3.txt
+chmod g=u _ex3.txt >> ex3.txt
+-rwxrwxrwx  1 imajou  staff  0 Oct 25 23:04 _ex3.txt
+
+660: user - rw, group - rw, others - nothing
+775: user - rwx, group - rwx, others - rx
+777: everything to everyone СЧАСТЬЕ ДЛЯ ВСЕХ, ДАРОМ, И ПУСТЬ НИКТО НЕ УЙДЁТ ОБИЖЕННЫЙ!
